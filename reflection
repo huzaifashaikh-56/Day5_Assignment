@@ -1,0 +1,4 @@
+Reflection:
+    This assignment helped me understand how Flexbox can create responsive web layouts.
+    I reused components like tables, iframes, and forms from Day 3.
+    The main challenge was making the layout responsive across screen sizes, but using flex-wrap and media queries helped fix it.
