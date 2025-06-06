@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flexbox Layout Assignment</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header, footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #34495e;
+      color: white;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+    }
+
+    .main {
+      display: flex;
+      flex: 1;
+      flex-wrap: wrap;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .left, .right {
+      flex: 1;
+      min-width: 300px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+    }
+
+    .footer-text {
+      font-size: 0.9em;
+    }
+
+    table, th, td {
+      border: 1px solid #999;
+      border-collapse: collapse;
+      padding: 8px;
+      width: 100%;
+    }
+
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      margin-top: 10px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .btn {
+      background-color: #1a73e8;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #0c47a1;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .main {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>My Flexbox Layout</h1>
+      <p class="tagline">Responsive and Clean Web Design</p>
+    </header>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <div class="main">
+      <section class="left">
+        <h2>Team Members Table</h2>
+        <table>
+          <tr><th>Name</th><th>Role</th></tr>
+          <tr><td>Amit</td><td>Developer</td></tr>
+          <tr><td>Sara</td><td>Designer</td></tr>
+        </table>
+
+        <h3>Video Frame</h3>
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Sample Video"></iframe>
+      </section>
+
+      <section class="right">
+        <h2>Contact Form</h2>
+        <form>
+          <label>Name</label>
+          <input type="text" name="name" placeholder="Enter your name" />
+
+          <label>Email</label>
+          <input type="email" name="email" placeholder="Enter your email" />
+
+          <label>Message</label>
+          <textarea rows="4" placeholder="Write your message"></textarea>
+
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </section>
+    </div>
+
+    <footer>
+      <p class="footer-text">© 2025 My Website | Designed with Flexbox</p>
+    </footer>
+  </div>
+
+
+</body>
+</html>
